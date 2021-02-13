@@ -5,6 +5,9 @@ from glob import glob
 
 join_path = os.path.join
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+if os.path.exists(join_path(DATA_DIR, self.name)) == False:
+    os.mkdir(join_path(BASE_DIR, "Files"))
 DATA_DIR = join_path(BASE_DIR, "Files")
 
 class Skyroom_Downloader:
