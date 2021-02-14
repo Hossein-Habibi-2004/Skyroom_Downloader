@@ -12,7 +12,7 @@ class Skyroom_Downloader:
         self.last_page = last_page
         self.value_func = value_func
 
-        if os.path.exists(join_path(FILES_DIR, self.name)) == False:
+        if os.path.exists(join_path(FILES_DIR, self.name)):
             os.mkdir(join_path(FILES_DIR, self.name))
     
     def download_images(self) -> bool:
