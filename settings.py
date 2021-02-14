@@ -4,7 +4,7 @@ import os
 join_path = os.path.join
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = join_path(BASE_DIR, "Data")
-if os.path.exists(join_path(DATA_DIR, "Files")) == False:
+if os.path.exists(join_path(BASE_DIR, "Files")) == False:
     os.mkdir(join_path(BASE_DIR, "Files"))
 FILES_DIR = join_path(BASE_DIR, "Files")
 
